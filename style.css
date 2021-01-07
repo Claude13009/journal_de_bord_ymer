@@ -9,11 +9,80 @@
 /* ............................................................................................................. */
                                                /* @MEDIA  */
 /* ............................................................................................................. */
+@media screen and (min-width:600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .lazare,.claude,.common {
+        width: 100%;
+    }
 
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    .lazare,.claude,.common {
+        width: 30w;
+    }
+
+}
 /* ............................................................................................................. */
                                             /* STYLE GENERAL */
 /* ............................................................................................................. */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul {
+    margin: 5%;   
+}
 
+li {
+    list-style-type: none;
+    line-height: 2rem;
+}
+.claude,.lazare,.common {
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    border: 10px double;
+    margin-right: auto;
+    margin-left: auto;
+}
+.claude {
+    background-color: rgb(141, 37, 37);
+    color: white;
+}
+.lazare {
+    background-color: #17a2b8;
+    color: white;
+}
+.techno {
+    font-size:1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.lazare .techno {
+    color: rgb(141, 37, 37);
+}
+
+.claude .techno {
+    color:#17a2b8;
+}
+
+.common .techno {
+    color: blueviolet;
+}
+
+.lazare ul, .claude ul, .common ul {
+    border:5px double;
+    border-radius: 30px;
+}
 /* ............................................................................................................. */
                                          /* STYLE DES CLASSES  */
 /* ............................................................................................................. */

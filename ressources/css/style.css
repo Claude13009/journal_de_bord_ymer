@@ -9,14 +9,22 @@
 /* ............................................................................................................. */
                                                /* @MEDIA  */
 /* ............................................................................................................. */
-@media screen and (min-width:600px) {
+@media screen and (min-width:400px) {
     body {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .lazare,.claude,.common {
         width: 100%;
     }
+    .plugins,.theme,.style {
+        width: 99%;        
+        border: 1px solid black;
+        margin: auto;
+        padding: 0;
+    }
+    
 
 }
 
@@ -26,7 +34,10 @@
         flex-direction: row;
     }
     .lazare,.claude,.common {
-        width: 30w;
+        width: 30vw;
+    }
+    .plugins,.theme,.style {
+        width: 30vw;
     }
 
 }
